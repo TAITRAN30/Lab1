@@ -1,0 +1,13 @@
+import java.until.scanner;
+public class BAI2 {
+    public static void main (String[] args) {
+        String chieucao;
+        String chieurong;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap chieu cao" ); 
+        chieucao = kb.nextLine();
+        System.out.println("nhap chieu rong" ); 
+        chieurong  = kb.nextLine();
+        System.out.println("dien tich hinh chu nhat" +  (chieucao*chieurong)  + );
+    }
+}

@@ -1,0 +1,10 @@
+import java.until.scanner;
+public class BAI3 {
+    public static void main (String[] args) {
+        int dof;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap do F" );  
+        dof = kb.nextint();
+        System.out.println("do C la" +  (dof-32)/1.8  + );
+    }
+}

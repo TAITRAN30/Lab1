@@ -1,0 +1,14 @@
+import java.until.scanner;
+public class BAI4 {
+    public static void main (String[] args) {
+        int ngay;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap so ngay trong nam" );  
+        ngay = kb.nextint();
+        if (ngay % 4 == 0 || ngay % 100 != 0 && ngay % 400 == 0 ) {
+            System.out.println("nam nhuan");
+        } else {
+            System.out.println("nam khong nhuan");
+        }
+    }
+}

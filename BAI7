@@ -1,0 +1,41 @@
+import java.until.scanner;
+public class BAI7 {
+    public static void main (String[] args) {
+        String ly;
+        String hoa;
+        String sinh;
+        String toan;
+        String maytinh;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap diem mon ly");
+        ly = kb.nextLine();
+        System.out.println("nhap diem mon hoa");
+        hoa = kb.nextLine();
+        System.out.println("nhap diem mon sinh");
+        sinh = kb.nextLine();
+        System.out.println("nhap diem mon toan");
+        toan = kb.nextLine();
+        System.out.println("nhap diem mon may tinh");
+        maytinh = kb.nextLine();
+        if (((ly+hoa+sinh+toan+maytinh)/50)*100 > 90) {
+            System.out.println("Hang A");
+        } else if {
+            (((ly+hoa+sinh+toan+maytinh)/50)*100 > 80) {
+            System.out.println("Hang B");}
+        } else if {
+            (((ly+hoa+sinh+toan+maytinh)/50)*100 > 70) {
+            System.out.println("Hang C");}
+        } else if {
+            (((ly+hoa+sinh+toan+maytinh)/50)*100 > 60){ 
+            System.out.println("Hang D");}
+        } else if {
+            (((ly+hoa+sinh+toan+maytinh)/50)*100 > 40) {
+            System.out.println("Hang E");}
+        } else {
+            System.out.println("Hang F");  
+        }
+    }
+}
+    
+        
+

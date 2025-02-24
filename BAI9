@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class BAI9 {
+    public static void main(String[] args) {
+        int n;
+        int sum;
+        int product;
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Nhập vào một số nguyên: ");
+        n = kb.nextInt();
+        
+        System.out.println("Tổng các chữ số: " + sum);
+        System.out.println("Tích các chữ số: " + product);
+    }
+
+    public static int sum(int n) {
+        sum = 0;
+        while (n != 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
+    }
+     public static int product(int n) {
+        product = 1;
+        while (n != 0) {
+            product *= n % 10;
+            n /= 10;
+        }
+        return product;
+    }
+}

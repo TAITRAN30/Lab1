@@ -1,0 +1,22 @@
+import java.until.scanner;
+public class BAI5 {
+    public static void main (String[] args) {
+        String so1;
+        String so2;
+        String so3;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap so thu 1");  
+        so1 = kb.nextLine();
+        System.out.println("nhap so thu 2"); 
+        so2  = kb.nextLine();
+        System.out.println("nhap so thu 3"); 
+        so3 = kb.nextLine();
+        if (so1 > so2 && so1 > so3) {
+            System.out.println("so lon nhat la" + so1 +);
+        } else if (so2 > so1 && so2 > so3) {
+            System.out.println("so lon nhat la" + so2+);
+        } else {
+            System.out.println("so lon nhat la" + so3);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class BAI11 {
+    public static void main(String[] args) {
+        int n;
+        int reversed;
+        int digit;
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Nhập vào một số nguyên: ");
+        int n = kb.nextInt();
+        System.out.println("Số đảo ngược là: " + reverse);
+    }
+    public static int reversed(int n) {
+        reversed = 0;
+        while (n != 0) {
+            digit = n % 10;
+            reversed = reversed * 10 + digit;
+            number /= 10;
+        }
+        return reversed;
+    }
+}

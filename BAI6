@@ -1,0 +1,20 @@
+import java.until.scanner;
+public class BAI6 {
+    public static void main (String[] args) {
+        String canh1;
+        String canh2;
+        String canh3;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap canh thu 1");
+        canh1 = kb.nextLine();  
+        System.out.println("nhap canh thu 2");
+        canh2  = kb.nextLine(); 
+        System.out.println("nhap canh thu 3");
+        canh3 = kb.nextLine();
+        if (canh1+canh2 > canh3 && canh1+canh3 > canh2 && canh2+canh3 > canh1) {
+            System.out.println("tam giac hop le");
+        } else {
+            System.out.println("tam giac khong hop le");
+        }
+    }
+}

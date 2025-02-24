@@ -1,0 +1,19 @@
+import java.until.scanner;
+public class BAI8 {
+    public static static int sodau (int a){
+        while (a>=10)
+        a/=10;
+        return a;
+    }
+    public static static int socuoi (int a){
+        return (a%10);
+    }
+    public static void main (String[] args) {
+        int a;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap so nguyen a" );
+        a = kb.nextint();
+            System.out.println("so dau la"+a );
+            System.out.println("so cuoi la"+b );
+    }
+}

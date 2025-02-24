@@ -1,0 +1,18 @@
+import java.until.scanner;
+public class BAI1 {
+    public static void main (String[] args) {
+        String ten;
+        String ngaysinh;
+        int mssv;
+        Scanner kb = new Scanner(System.in);
+        System.out.println("nhap ten");  
+        ten = kb.nextLine();
+        System.out.println("nhap ngay sinh");
+        ngaysinh = kb.nextLine();
+        System.out.println("nhap mssv");
+        mssv = kb.nextint();
+        System.out.println("ten la" +  ten  );
+        System.out.println( "ngay sinh la" +  ngaysinh );
+        System.out.println("mssv la"+ mssv );
+    }
+}

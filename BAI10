@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class BAI10 {
+    public static void main(String[] args) {
+        int n;
+        int count;
+        Scanner kb = new Scanner(System.in);
+        System.out.print("Nhập vào một số nguyên: ");
+        int n = kb.nextInt();
+        
+        System.out.println("Số chữ số trong số là: " + count);
+    }
+
+    public static int count(int n) {
+        count = 0;
+        if (n == 0) {
+            return 1;
+        }
+        while (n != 0) {
+            n /= 10;
+            count++;
+        }
+        return count;
+    }
+}
