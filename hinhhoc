@@ -1,0 +1,121 @@
+public class hinhhoc {
+    public float pi=3.14;
+    public String ten;
+    public float chuvi;
+    public float dientich;
+    public float thetich;
+    public void xuatTen(){
+        System.out.println("Ten hinh hoc: "+ten);
+    }
+    public void inChuVi(){
+        System.out.println("Chu vi: "+chuvi);
+    }
+    public void inDienTich(){
+        System.out.println("Dien tich: "+dientich);
+    }
+    public void inTheTich(){
+        System.out.println("The tich: "+thetich);
+    }
+}
+class hinhtron extends hinhhoc {
+    private float bankinh;
+    public hinhtron(){
+        this.ten="Hinh tron";
+    }
+    public void nhapBanKinh(float bankinh){
+        this.bankinh=bankinh;
+        tinhChuVi();
+        tinhDienTich();
+    }
+    public void tinhChuVi(){
+        chuvi=2*pi*bankinh;
+    }
+    public void tinhDienTich(){
+        dientich=pi*bankinh*bankinh;
+    }
+}
+class hinhtru extends hinhtron {
+    private float chieucao;
+    public hinhtru(){
+        this.ten="Hinh tru";
+    }
+    public void nhapChieuCao(float chieucao){
+        this.chieucao=chieucao;
+        tinhTheTich();
+    }
+    public void tinhTheTich(){
+        thetich=dientich*chieucao;
+    }
+}
+class hinhchunhat extends hinhhoc {
+    private float dai;
+    private float rong;
+    public hinhchunhat() { 
+        this.ten="Hinh chu nhat";
+    }
+    public void nhapChieudai(float dai) {
+        this.dai=dai;
+        tinhChuVi();
+        tinhDienTich();
+    }
+    public void nhapChieurong(float rong) {
+        this.rong=rong;
+        tinhChuVi();
+        tinhDienTich();
+    }
+    public void tinhChuVi(){
+        chuvi=(dai+rong)*2;
+    }
+    public void tinhDienTich(){
+        dientich=dai*rong;
+    }
+}
+class hinhvuong extends hinhchunhat {
+    private float canh;
+    public hinhvuong() {
+        this.ten="Hinh vuong";
+    } 
+    public void nhapCanh(float canh) {
+        this.canh = canh;
+        tinhChuVi();
+        tinhDienTich();
+    }
+    public void tinhChuVi() {
+        chuVi = 4 * canh;
+    }
+    public void tinhDienTich() {
+        dienTich = canh * canh;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        hinhtron hinhtron = new hinhtron();
+        hinhtron.nhapBanKinh();
+        hinhchunhat hinhChuNhat = new hinhchunhat();
+        hinhchunhat.nhapChieuDai();
+        hinhchunhat.nhapChieuRong();
+        hinhtru hinhtru = new hinhtru();
+        hinhtru.nhapChieuCao();
+        hinhvuong hinhvuong = new hinhvuong();
+        hinhvuong.nhapCanh();
+        System.out.println("Hình Tròn:");
+        hinhtron.xuatTen();
+        hinhtron.inChuVi();
+        hinhtron.inDienTich();
+        hinhtron.inTheTich();
+        System.out.println("Hình Chữ Nhật:");
+        hinhchunhat.xuatTen();
+        hinhchunhat.inChuVi();
+        hinhchunhat.inDienTich();
+        System.out.println("Hình Trụ:");
+        hinhtru.xuatTen();
+        hinhtru.inChuVi();
+        hinhtru.inDienTich();
+        hinhtru.inTheTich();
+        System.out.println("Hình Vuông:");
+        hinhvuong.xuatTen();
+        hinhvuong.inChuVi();
+        hinhvuong.inDienTich();
+    }
+}
+
